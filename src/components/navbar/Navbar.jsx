@@ -6,6 +6,7 @@ import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ListIcon from '@mui/icons-material/List';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const Navbar = () => {
   return (
@@ -13,24 +14,27 @@ const Navbar = () => {
       <div className="wrapper">
         <div className="search">
           <input type="text" placeholder='Search...' />
-          <SearchIcon/>
+          <SearchIcon className='icon'/>
         </div>
         <div className="items">
           <div className="item">
-            <LanguageIcon/>
+            <LanguageIcon className='icon'/>
             English
           </div>
           <div className="item">
-            <FullscreenExitIcon/>
+            <DarkModeIcon className='icon'/>
           </div>
           <div className="item">
-            <NotificationsIcon/>
+            <FullscreenExitIcon className='icon'/>
           </div>
           <div className="item">
-            <ChatBubbleOutlineIcon/>
+            <NotificationsIcon className='icon'/>
           </div>
           <div className="item">
-            <ListIcon/>
+            <ChatBubbleOutlineIcon className='icon'/>
+          </div>
+          <div className="item">
+            <ListIcon className='icon'/>
           </div>
         </div>
       </div>
