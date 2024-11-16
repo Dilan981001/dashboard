@@ -1,5 +1,5 @@
 import React from 'react'
-import './Widget.scss';
+import './widget.scss';
 
 const widget = () => {
   return (
