@@ -3,7 +3,7 @@ import './widget.scss';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 
-const widget = () => {
+const widget = ({type}) => {
   return (
     <div className='widget'>
         <div className="left">
@@ -12,7 +12,7 @@ const widget = () => {
             <span className='link'>See all Users</span>
         </div>
         <div className="right">
-          <div className="percentage">
+          <div className="percentage positive">
             <KeyboardArrowUpIcon/>
             20%</div>
             <PersonOutlineIcon className='icon'/>
