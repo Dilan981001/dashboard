@@ -53,7 +53,7 @@ const List = () => {
         {
             id:2342355,
             product:"ASUS ROG Strix",
-            img:"https://m.media-amazon.com/images/I/81hH5vk-MCL._AC_UY327_FMwebp_QL65_.jpg",
+            img:"https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
             customer:"Harold Carol",
             date:"1 March",
             amount: 2000,
@@ -80,12 +80,19 @@ const List = () => {
             <TableRow key={row.id}>
               
               <TableCell className='tableCell' >{row.id}</TableCell>
-              <TableCell className='tableCell' >{row.product}</TableCell>
+              <TableCell className='tableCell' >
+                <div className="cellWrapper">
+                    <img src={row.img} alt="" className="image" />
+                    {row.product}
+                </div>
+              </TableCell>
               <TableCell className='tableCell' >{row.customer}</TableCell>
               <TableCell className='tableCell' >{row.date}</TableCell>
               <TableCell className='tableCell' >{row.amount}</TableCell>
               <TableCell className='tableCell' >{row.method}</TableCell>
-              <TableCell className='tableCell' >{row.status}</TableCell>
+              <TableCell className='tableCell' >
+                <span className={'status ${row.status}'}>{row.status}</span>
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
