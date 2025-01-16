@@ -1,6 +1,6 @@
 import React from 'react'
 import "./chart.scss"
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, XAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 
 
@@ -36,9 +36,9 @@ const Chart = () => {
               <stop offset="95%" stopColor='#8884d8' stopOpacity={0}/>
             </linearGradient>
           </defs>
-          <XAxis dataKey="name" />
-          <YAxis />
-          <CartesianGrid strokeDasharray="3 3"/>
+          <XAxis dataKey="name"  stroke='gray'/>
+          
+          <CartesianGrid strokeDasharray="3 3" className='chartGrid' />
           <Tooltip />
           <Area 
           type="monotone" 
