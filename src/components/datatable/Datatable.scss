@@ -1,5 +1,5 @@
-.datatable {
-    height: 600px;
+.datatable{
+    height: 1500px;
     padding: 20px;
     
     .datatableTitle{
@@ -63,7 +63,7 @@
         padding: 2px 5px;
         border-radius: 5px;
         color: darkblue;
-        border: 1px dotted rgba(0, 0, 139, 0.596);
+        //border: 1px dotted rgba(0, 0, 139, 0.596);
         cursor: pointer;
       }
       
@@ -71,7 +71,7 @@
         padding: 2px 5px;
         border-radius: 5px;
         color: crimson;
-        border: 1px dotted rgba(220, 20, 60, 0.6);
+       //border: 1px dotted rgba(220, 20, 60, 0.6);
         cursor: pointer;
       }
     }
