@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Navbar.scss';
 import SearchIcon from '@mui/icons-material/Search';
 import LanguageIcon from '@mui/icons-material/Language';
@@ -7,8 +7,12 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import ListIcon from '@mui/icons-material/List';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
+import { DarkModeContext } from '../../context/darkmodeContext';
+
 
 const Navbar = () => {
+const {dispatch} = useContext(DarkModeContext);
+
   return (
     <div className='navbar'>
       <div className="wrapper">
@@ -22,7 +26,7 @@ const Navbar = () => {
             English
           </div>
           <div className="item">
-            <DarkModeIcon className='icon'/>
+            <DarkModeIcon className='icon' onClick={()=>dispatch({type: "TOGGLE"})}/>
           </div>
           <div className="item">
             <FullscreenExitIcon className='icon'/>
